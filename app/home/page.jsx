@@ -6,8 +6,8 @@ import { FaFacebookSquare, FaGithubSquare } from "react-icons/fa";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-const Typewriter = React.lazy(() => 
-  import("react-simple-typewriter").then(mod => ({ default: mod.Typewriter }))
+const Typewriter = React.lazy(() =>
+  import("react-simple-typewriter").then((mod) => ({ default: mod.Typewriter }))
 );
 
 const socialLinks = [
@@ -34,7 +34,7 @@ const Home = () => {
     const fetchData = async () => {
       const response = await fetch("/content.json"); // Adjust the path if necessary
       const data = await response.json();
-      console.log(data)
+      console.log(data);
       setHeroContent(data.HERO_CONTENT); // Assuming HERO_CONTENT is the field name in your JSON
     };
 
@@ -61,7 +61,11 @@ const Home = () => {
             <span className="text-green-500 font-bold">
               <Suspense fallback={<span>Loading...</span>}>
                 <Typewriter
-                  words={["Full Stack Developer (MERN)", "Full Stack Developer (NextJS)", "WordPress Developer"]}
+                  words={[
+                    "Full Stack Developer (MERN)",
+                    "Full Stack Developer (NextJS)",
+                    "WordPress Developer",
+                  ]}
                   loop={true}
                   cursor
                   cursorStyle="|"
@@ -87,7 +91,12 @@ const Home = () => {
             </button>
             <div className="flex gap-2">
               {socialLinks.map(({ href, icon: Icon }, idx) => (
-                <a key={idx} href={href} target="_blank" rel="noopener noreferrer">
+                <a
+                  key={idx}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Icon className="p-2 text-4xl bg-black text-white hover:bg-white hover:text-black rounded-full hover:scale-105 duration-300" />
                 </a>
               ))}
@@ -97,61 +106,61 @@ const Home = () => {
 
         {/* Right Side Code Editor Section */}
         <motion.div
-          onMouseMove={handleMouseMove}
-          onMouseLeave={() => setPosition({ x: 0, y: 0 })}
-          style={{ perspective: 1000 }}
-          className="rounded-lg"
-        >
-          <motion.div
-            style={{ x: position.x, y: position.y }}
-            transition={{ type: "spring", stiffness: 100, damping: 10 }}
-            className="backdrop-blur-3xl border-1 shadow-sm shadow-slate-500 rounded-lg shadow-lg p-4 sm:p-6 md:p-8 max-w-full sm:max-w-lg mx-4 sm:mx-auto"
-          >
-            {/* Header part with buttons */}
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-3 h-3 bg-red-500 rounded-full"></div>
-              <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
-              <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-            </div>
+  onMouseMove={handleMouseMove}
+  onMouseLeave={() => setPosition({ x: 0, y: 0 })}
+  style={{ perspective: 1000 }}
+  className="rounded-lg px-4 sm:px-8" // Added responsive padding
+>
+  <motion.div
+    style={{ x: position.x, y: position.y }}
+    transition={{ type: "spring", stiffness: 100, damping: 10 }}
+    className="backdrop-blur-3xl border-1  shadow-slate-500 rounded-lg shadow-sm p-4 sm:p-6 md:p-8 max-w-full sm:max-w-lg" // Centered on small devices
+  >
+    {/* Header part with buttons */}
+    <div className="flex items-center space-x-2 mb-4">
+      <div className="w-3 h-3 bg-red-500 rounded-full"></div>
+      <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
+      <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+    </div>
 
-            {/* Code block */}
-            <pre className="text-sm md:text-base text-gray-300">
-              <code>
-                {`const coder = {`}
-                <br />
-                &nbsp;&nbsp;{`name: 'Rittik Chauhan',`}
-                <br />
-                &nbsp;&nbsp;
-                {`skills: ['React', 'NextJS', 'NodeJS', 'ExpressJS',`}
-                <br />
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                {`'MongoDB', 'TailwindCSS', 'Wordpress'],`}
-                <br />
-                &nbsp;&nbsp;{`hardWorker: true,`}
-                <br />
-                &nbsp;&nbsp;{`quickLearner: true,`}
-                <br />
-                &nbsp;&nbsp;{`problemSolver: true,`}
-                <br />
-                &nbsp;&nbsp;{`hireable: function() {`}
-                <br />
-                &nbsp;&nbsp;&nbsp;&nbsp;{`return (`}
-                <br />
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{`this.hardWorker &&`}
-                <br />
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{`this.problemSolver &&`}
-                <br />
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{`this.skills.length >= 5;`}
-                <br />
-                &nbsp;&nbsp;&nbsp;&nbsp;{`);`}
-                <br />
-                &nbsp;&nbsp;{`}`}
-                <br />
-                {`};`}
-              </code>
-            </pre>
-          </motion.div>
-        </motion.div>
+    {/* Code block */}
+    <pre className="text-sm md:text-base text-gray-300">
+      <code>
+        {`const coder = {`}
+        <br />
+        &nbsp;&nbsp;{`name: 'Rittik Chauhan',`}
+        <br />
+        &nbsp;&nbsp;
+        {`skills: ['MERN', 'NEXTJS , 'WORDPRESS'],`}
+        <br />
+
+     
+        &nbsp;&nbsp;{`hardWorker: true,`}
+        <br />
+        &nbsp;&nbsp;{`quickLearner: true,`}
+        <br />
+        &nbsp;&nbsp;{`problemSolver: true,`}
+        <br />
+        &nbsp;&nbsp;{`hireable: function() {`}
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;{`return (`}
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{`this.hardWorker &&`}
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{`this.problemSolver &&`}
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{`this.skills.length >= 5;`}
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;{`);`}
+        <br />
+        &nbsp;&nbsp;{`}`}
+        <br />
+        {`};`}
+      </code>
+    </pre>
+  </motion.div>
+</motion.div>
+
       </div>
     </div>
   );

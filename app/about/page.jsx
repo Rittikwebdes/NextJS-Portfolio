@@ -31,11 +31,11 @@ const About = () => {
             src={require("../../public/Rittik.jpg")} // Ensure this path is correct
             alt="Profile Picture"
             priority
-            className="w-[500px] h-auto rounded-full"
+            className="md:w-[500px] w-[300px]  rounded-full"
           />
         </div>
         <div>
-          <p className="text-lg mb-6 max-w-2xl text-center">{aboutText}</p>
+          <p className="text-lg mb-6 max-w-[320px] md:max-w-2xl text-center">{aboutText}</p>
           <div className="flex justify-center gap-8 items-center">
             <button
               onClick={() =>
