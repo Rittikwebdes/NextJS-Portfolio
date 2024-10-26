@@ -13,6 +13,7 @@
         "Githublink": "https://github.com/Rittikwebdes/Personal-Portfolio",
         "LiveLink": "https://personal-portfolio-kappa-topaz.vercel.app/"
       },
+
       {
         "id": 2,
         "title": "REACT PASSWORD GENERATOR APP",
@@ -66,6 +67,15 @@
         "technologies": ["React", "NodeJS", "ExpressJS","MongoDB","Tailwind"],
         "Githublink": "https://github.com/Rittikwebdes/MernGym",
         "LiveLink": "https://mern-gym.vercel.app/"
+      },
+      {
+        "id": 8,
+        "title": "NEXTJS PORTFOLIO",
+        "image": "/Image6.png",
+        "description": "Explore my Next.js portfolio, featuring a seamless Hire Me button that redirects to WhatsApp and a Donwload CV button for easy access to my resume. All social media links are fully functional, and my dynamic projects showcase my skills and creativity in web development.",
+        "technologies": ["NextJS", "TailwindCSS","Framer-Motion"],
+        "Githublink": "https://github.com/Rittikwebdes/NextJS-Portfolio",
+        "LiveLink": "https://next-js-portfolio-azure-rho.vercel.app/home"
       }
     ],
     "CONTACT": {
