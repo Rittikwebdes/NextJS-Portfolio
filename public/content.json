@@ -1,7 +1,7 @@
 {
-    "HERO_CONTENT": "I am a passionate MERN stack developer with a focus on both front-end technologies like ReactJS, as well as back-end technologies like Node.js, ExpressJS, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.",
+    "HERO_CONTENT": "Hi, I'm a passionate developer specializing in the MERN stack, Next.js, and WordPress. With a solid understanding of front-end and back-end technologies, I create dynamic web applications and user-friendly websites that deliver exceptional experiences and drive business growth.",
   
-    "ABOUT_TEXT": "I am a dedicated and versatile MERN stack developer with a passion for creating efficient and user-friendly web applications. I have worked with a variety of technologies, including ReactJS, Node.js, ExpressJS, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects. I'm always excited to connect with others in the tech community. If you'd like to discuss front-end development, potential collaborations, or even your favorite film or recipe, feel free to email me at rittikchauhan8112002@gmail.com.",
+    "ABOUT_TEXT": "I am a passionate MERN stack developer dedicated to crafting efficient, user-centric web applications. My expertise spans ReactJS, Node.js, ExpressJS, MongoDB, Next.js, and WordPress, fueling my love for problem-solving and continuous learning. I thrive in collaborative settings and actively contribute to open-source projects. Beyond coding, I enjoy exploring new technologies, staying active, and connecting with fellow tech enthusiasts. Let’s discuss front-end development, potential collaborations, or even share favorite films or recipes! Reach out at rittikchauhan8112002@gmail.com.",
   
     "PROJECTS": [
       {
@@ -57,6 +57,15 @@
         "technologies": ["React", "Tailwind", "Rapid API"],
         "Githublink": "https://github.com/Rittikwebdes/ReactYouTubeClone",
         "LiveLink": "https://react-you-tube-clone-flame.vercel.app/"
+      },
+      {
+        "id": 7,
+        "title": "MERN GYM WEBSITE",
+        "image": "/Image5.png",
+        "description": "Welcome to our innovative gym website, crafted with the MERN stack and styled using Tailwind CSS, where fitness meets functionality. Our platform features a user-friendly BMI calculator to help you monitor your health metrics and achieve your fitness goals. With the ability to add personalized diet plans, you can easily manage your nutrition and fuel your workouts effectively. The Contact Us section provides a seamless way to reach out for support, ensuring all your queries are addressed promptly. Additionally, our secure login and registration system allows users to access their personal profiles effortlessly, enhancing their overall experience. Join us today and embark on your journey to a healthier, fitter lifestyle!",
+        "technologies": ["React", "NodeJS", "ExpressJS","MongoDB","Tailwind"],
+        "Githublink": "https://github.com/Rittikwebdes/MernGym",
+        "LiveLink": "https://mern-gym.vercel.app/"
       }
     ],
     "CONTACT": {
