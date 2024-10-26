@@ -2,20 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+::-webkit-scrollbar {
+    display: none;
   }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
+  
+  /* Hide scrollbar for Firefox */
+  html {
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  /* Optional: Remove scroll behavior but still allow scrolling */
+  body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    overflow: -moz-scrollbars-none;
+    overflow-y: scroll; /* If you want to allow vertical scrolling but hide the bar */
+  }
