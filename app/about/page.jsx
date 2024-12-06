@@ -46,7 +46,7 @@ const About = () => {
               }
               className="text-white text-xl bg-green-600 rounded-full px-4 py-2 hover:scale-105 duration-300"
             >
-              HIRE ME
+              Talk to me
             </button>
             <div className="flex gap-2">
               <a
